@@ -1,1 +1,45 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    body{
+      text-align: center;
+    }
+    img {
+      margin-top: 100px;
+      height: 200px;
+    }
+    #search-feild {
+      width: 350px;
+      border-radius: 5px;
+     
+    }
+    .search-button{
+      padding:5px;
+      margin:3px;
+      
+    }
+</head>
+<body>
+  <img src = "http://72gpf1za5iq428ekh3r7qjc1.wpengine.netdna-cdn.com/wp-content/uploads/2015/02/google.png">
+  <br />
+  <input type ="type"  />
+  <br />
+  <br />
+  <button type="button" class="search-button"> Google Search </button>
+  <button type="button" class="search-button"> I'm Feeling Lucky </button>
+    
+  <script>
+    var text = "how do i get and a"
+    var searchField = document.getElementById('search-field')
+    for(let i = 0;i<text.length;i++){
+      setTimeout(function() {
+        searchField.value = searchField.value + text.charAt(i);
+      }, 250+i);
+    }
+  
+</body>
+</html>
